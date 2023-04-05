@@ -82,7 +82,7 @@ p {
 }
 
 .card {
-    background-color: red;
+    /* background-color: red; */
     border: none;
     border-radius: 3em;
     box-shadow: 0.2rem 0.5rem 0.1rem 0rem rgba(0, 0, 0, 0.25);
@@ -149,3 +149,62 @@ p {
 legend {
     display: none;
 }
+
+
+
+
+
+
+
+/* .card.flipped {
+    transform: rotateY(180deg);
+} */
+
+
+
+.container {
+	 display: flex;
+	 width: 100%;
+	 height: 100vh;
+	 justify-content: center;
+	 align-items: center;
+	 perspective: 1000px;
+}
+ .card {
+	 position: relative;
+     width: 28em;
+	 height: 20em;
+	 margin: 0.5rem;
+	 text-align: center;
+	 line-height: 8rem;
+	 color: #ecf0f1;
+	 border-radius: 0.8rem;
+	 transform-style: preserve-3d;
+}
+ .face {
+	 display: block;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 border-radius: 0.8rem;
+	 background-size: cover;
+	 background-position: center center;
+	 backface-visibility: hidden;
+	 transition: transform 0.5s ease-in-out;
+}
+ .face--front {
+	 background: #d10909;
+}
+ .face--back {
+	 background: #2a6299;
+	 transform: rotateY(180deg);
+}
+ .card.flipped .face--front {
+	 transform: rotateY(-180deg);
+}
+ .card.flipped .face--back {
+	 transform: rotateY(0deg);
+}
+ 
