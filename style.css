@@ -171,7 +171,7 @@ legend {
 
 
 a {
-    width: 100%;
+    width: auto;
     height: 100%;
     rotate: 3deg;
 }
